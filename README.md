@@ -398,3 +398,22 @@ Se quiser estudar um segundo sistema de demonstração de microsserviços, suger
 Este exercício prático, incluindo o seu código, foi elaborado por **Rodrigo Brito**, aluno de mestrado do DCC/UFMG, como parte das suas atividades na disciplina Estágio em Docência, cursada em 2020/2, sob orientação do **Prof. Marco Tulio Valente**.
 
 O código deste repositório possui uma licença MIT. O roteiro descrito acima possui uma licença CC-BY.
+
+
+## Alterações Realizadas (Atividade Prática)
+
+Este projeto foi estendido com as seguintes implementações:
+
+### 1. Nova Funcionalidade: Busca por ID
+Foi adicionada a operação `SearchProductByID` no serviço de **Inventory**.
+- **Como testar:**
+  Acesse no navegador ou via curl: `http://localhost:3000/product/1`
+  Isso retornará os detalhes do produto com ID 1 diretamente do microsserviço.
+
+### 2. Containerização com Docker
+O serviço de **Shipping** (Frete) foi containerizado para rodar isolado.
+
+**Como rodar a versão atualizada:**
+1. Inicie os serviços base (Inventory, Controller, Frontend):
+   ```bash
+   npm run start
